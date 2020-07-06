@@ -5,6 +5,9 @@ import java.net.URISyntaxException;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+//import org.apache.http.client.HttpClient;
+//import org.apache.http.HttpRequest;
+//import org.apache.http.HttpResponse;
 import java.time.Duration;
 import java.util.Map;
 

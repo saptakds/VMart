@@ -442,11 +442,11 @@ export default class ProductPage extends Component {
             <br />
             <button className="mediumCartButton">ADD TO CART</button>
             <br />
-            <button className="mediumCartButton" href="./checkout">
+            <button className="mediumCartButton" onClick={this.handleBuyNow}>
               BUY NOW
             </button>
-            <hr />
             <br />
+            <hr />
             <br />
             <label className="blackH1lbl">DELIVERY OPTIONS</label>
             <br />
@@ -498,9 +498,9 @@ export default class ProductPage extends Component {
             <hr />
             <br/>
 
-            <button className="mediumCartButton" onClick={this.handleBuyNow}>BUY NOW</button>
+            {/* <button className="mediumCartButton" onClick={this.handleBuyNow}>BUY NOW</button>
            
-            <hr/>
+            <hr/> */}
             <br />
             <label className="blackH1lbl">Specifications</label>
             <br />

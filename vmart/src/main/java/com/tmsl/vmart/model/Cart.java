@@ -36,7 +36,7 @@ public class Cart {
 		this.cid = cid;
 	}
 	
-	@ElementCollection(fetch = FetchType.EAGER)
+	@ElementCollection(fetch = FetchType.LAZY)
 //	 @OneToMany(orphanRemoval=true)
 	public List<Product> getProducts() {
 		return products;

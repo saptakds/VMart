@@ -14,16 +14,26 @@
 # File Struckure
 
 root of the project
+
 +-- Databases 
+
     +-- .sql file
+    
 +-- Discussion
+
     +-- file2
+    
 +-- Frontend/Vmart
+
     +-- vmart  ->It contains all the frontend files, to run this use `yarn start` and Open `http://localhost:3000` to view it in the browser.
 +--screenshote
+
     +-- It contains all the screenshot used in the readme
+    
 +--Servers
+
 +--VMart
+
     +-- src
         +--main
           +--java   ->Contains all the java file
@@ -120,6 +130,14 @@ Product page is page which contains all the necessary information about a produc
 It Contains the Product Picture , Product Name, Product Descreption , Price and Discounted Prics,
 Product Specifications and Seller Name along with Product Code.
 
+The SELECT SIZE will allow you to select the appropriate size for the product. Using the DELIVERY OPTIONS you can check the delevary price for the product.
+
+
+The Checkout
+!![Product page 1](screenshots/Checkout1.png "Checkout page 1")
+!![Product page 2](screenshots/Checkout2.png "Checkout page 2") 
+!![Product page 1](screenshots/Checkout3.png "Checkout page 3")
+In the checkout you can input the name and mock data will shown by you.
 
 The Dashboard
 ![DashBoard page ](screenshots/Dash1.png "DashBoard page")
@@ -131,6 +149,14 @@ The Dashboard
 The Add poduct contains the Product Name, Price, Descreption, Catarory Name, percentage of Discount , Specefecation and hosted picture url .
 
 
+
+
+
+
+Limitations:
+1. Cart system has not been implemented
+2. Only mock payment gateway has been implemented
+3. Delivery distance is calculated using Here Maps API which has its own limitations and might not detect the position of every pincodes
 - - - -
 
 Thank you 

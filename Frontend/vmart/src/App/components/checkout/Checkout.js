@@ -13,6 +13,7 @@ import Typography from '@material-ui/core/Typography';
 import AddressForm from './AddressForm';
 import PaymentForm from './PaymentForm';
 import Review from './Review';
+import { wait } from '@testing-library/react';
 
 function Copyright() {
   return (
@@ -66,6 +67,29 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+// async componentWillMount() {
+//   _.delay(() => this.props.navigator.replace({ component: 'login' }), 1000);
+// }
+
+function Redirect() 
+    {   
+        // setInterval(5000)
+        // window.location="http://www.newpage.com";
+        var timing = 10000;
+        var card = "";
+        setInterval(function () {
+          Redirect('http://www.google.com')
+        },1000)
+      
+     
+      
+  
+
+        return card;
+    } 
+
+
+
 const steps = ['Shipping address', 'Payment details', 'Review your order'];
 
 function getStepContent(step) {
@@ -94,8 +118,11 @@ export default function Checkout() {
   };
 
   return (
+
+    
     <React.Fragment>
       <CssBaseline />
+      
       <AppBar position="absolute" color="default" className={classes.appBar}>
         <Toolbar>
           <Typography variant="h6" color="inherit" noWrap>
@@ -125,6 +152,7 @@ export default function Checkout() {
                   Your order number is #2001539. We have emailed your order confirmation, and will
                   send you an update when your order has shipped.
                 </Typography>
+                <div><Redirect/></div>
               </React.Fragment>
             ) : (
               <React.Fragment>
